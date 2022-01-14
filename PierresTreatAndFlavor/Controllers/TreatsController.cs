@@ -6,10 +6,9 @@ using PierresTreatAndFlavor.Models;
 using System.Collections.Generic;
 using System.Linq;
 
-
 namespace PierresTreatAndFlavor.Controllers
 {
-  [Authorize]
+  // [Authorize]
   public class TreatsController : Controller
   {
     private readonly PierresTreatAndFlavorContext _db;
