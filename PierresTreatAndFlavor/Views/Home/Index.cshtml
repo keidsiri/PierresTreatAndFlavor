@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Pierre's Sweet and Savory Bakery Shop </title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="~/css/styles.css">
+  <link rel="stylesheet" href="~/css/styles.css">
+</head>
+<body>
+  @await Html.PartialAsync("NavBar")  
+  <div class="bg-transparent text-secondary px-4 py-5 text-center" id="home-index">
+    <div class="py-5">
+      <h1 class="display-5 fw-bold text-white">Pierre's Bakery</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="fs-5 mb-4 text-white" >The Famouse bakery in Seattle!</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row text-center" id="home-buttons">
+    <div class="col-sm-4">
+      <div class="main-link-img" id="treats-img"></div>
+      <h2>See all treats</h2>
+      <p><a class="btn btn-secondary" href="Treats">View details »</a></p>
+    </div>
+    <div class="col-sm-4">
+      <div class="main-link-img" id="flavors-img"></div>
+      <h2>See all flavors</h2>
+      <p><a class="btn btn-secondary" href="Flavors">View details »</a></p>
+    </div>
+    <div class="col-sm-4">
+      <div class="main-link-img" id="users-img"></div>
+      <h2>Register and login </h2>
+      <p><a class="btn btn-secondary" href="Users">View details »</a></p>
+    </div>
+    
+  </div>
+  @await Html.PartialAsync("Footer")
+</body>
+</html>
