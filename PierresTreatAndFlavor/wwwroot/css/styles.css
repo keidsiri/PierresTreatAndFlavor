@@ -18,7 +18,7 @@ body {
   background-size: cover;
   background-position: inherit;
   text-align: center;
-	height: 420px;
+	height: 350px;
   box-shadow: 0px 1px 15px rgb(109, 109, 109);
   border-radius: 0px;
 }
@@ -29,7 +29,7 @@ body {
 }
 
 #treats-img {
-	background-image: url(../img/engineers.jpg);
+	background-image: url(../image/treat.jpg);
 	background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -42,7 +42,7 @@ body {
 }
 
 #flavors-img {
-	background-image: url(../img/machines.jpg);
+	background-image: url(../image/flavor.jpeg);
 	background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -52,4 +52,22 @@ body {
   box-shadow: 0px 1px 15px rgb(109, 109, 109);
   border-radius: 50%;
 	margin: auto;
+}
+
+
+#users-img {
+	background-image: url(../image/user.jpg);
+	background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0px 1px 15px rgb(109, 109, 109);
+  border-radius: 50%;
+	margin: auto;
+}
+
+.navbar {
+	font-size: medium;
 }
