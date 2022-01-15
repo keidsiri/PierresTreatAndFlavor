@@ -9,17 +9,17 @@ div#footer {
 }
 
 body {
-	background-color: rgb(192, 228, 235);
+	background-color:rgb(245, 219, 186);
 }
 
 #home-index {
-	background-image: url(../img/main.jpg);
+	background-image: url(../image/bakery.jpg);
 	background-repeat: no-repeat;
   background-size: cover;
   background-position: inherit;
   text-align: center;
 	height: 350px;
-  box-shadow: 0px 1px 15px rgb(109, 109, 109);
+  box-shadow: 0px 1px 15px rgb(224, 181, 61);
   border-radius: 0px;
 }
 
