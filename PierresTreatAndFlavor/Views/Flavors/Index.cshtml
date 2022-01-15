@@ -1,0 +1,23 @@
+@using PierresTreatAndFlavor.Models;
+@model List<PierresTreatAndFlavor.Models.Flavor>;
+
+<h1>Flavors</h1>
+
+@if (@Model.Count == 0)
+{
+  <h3>No Flavors have been added yet!</h3>
+}
+
+<div class="items">
+  <table class="table table-bordered table-striped">
+    @foreach(Flavor flavor in Model)
+    {
+        <td>
+          @Html.ActionLink($"{flavor.Name}", "Details", new{ id = flavor.FlavorId})
+        </td>
+    }
+  </table>
+</div>
+
+<p>@Html.ActionLink("Add new flavor", "Create")</p>
+<p>@Html.ActionLink("Return Home", "Index", "Home")</p>
