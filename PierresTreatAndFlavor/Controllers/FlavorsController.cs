@@ -11,21 +11,26 @@ using System.Security.Claims;
 
 namespace PierresTreatAndFlavor.Controllers
 { 
-  // [Authorize]
+  [Authorize]
   public class FlavorsController : Controller
   {
     private readonly PierresTreatAndFlavorContext _db;
+    private readonly UserManager<ApplicationUser> _userManager;
     
-    public FlavorsController(PierresTreatAndFlavorContext db)
+    public FlavorsController(UserManager<ApplicationUser> userManager, PierresTreatAndFlavorContext db)
     {
+      _userManager = userManager;
       _db = db;
     }
 
     [AllowAnonymous]
-    public ActionResult Index()
-    {
-      return View(_db.Flavors.ToList());
-    }
+    public async Task<ActionResult> Index()
+{
+    var userId = this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+    var currentUser = await _userManager.FindByIdAsync(userId);
+    var userFlavors = _db.Flavors.Where(entry => entry.User.Id == currentUser.Id).ToList();
+    return View(userFlavors);
+}
 
     public ActionResult Create()
     {
@@ -34,8 +39,11 @@ namespace PierresTreatAndFlavor.Controllers
     }
 
     [HttpPost]
-    public ActionResult Create(Flavor flavor, int TreatId)
-    {
+    public async Task<ActionResult> Create(Flavor flavor, int TreatId)
+    { 
+      var userId = this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+      var currentUser = await _userManager.FindByIdAsync(userId);
+      flavor.User = currentUser;
       _db.Flavors.Add(flavor);
       _db.SaveChanges();
       if (TreatId != 0)
