@@ -58,14 +58,14 @@ Authentication Features:
     ` dotnet ef database update `
 
 * To Make Changes to the Database:
-  - If you would like to change the database, make changes in the proper models files, then run the following commands in the terminal navigated to PierresTreatAndFlavor.Solution/PierresTreatAndFlavor:
-    ` dotnet ef migrations add YourDescriptionHere`
+  - If you would like to change the database, make changes in the proper models files, then run the following commands in the terminal navigated to PierresTreatAndFlavor.Solution/PierresTreatAndFlavor: <br>
+    ` dotnet ef migrations add YourDescriptionHere` <br>
     ` dotnet ef database update`
 
 * To Restore, build, and run the project in PierresTreatAndFlavor folder
-  - Run the command "$ dotnet restore" to restore the project dependencies
-  - Run the command "$ dotnet build" to build and compile the project
-  - Run the command "$ dotnet run" to build and compile the project
+  - Run the command `$ dotnet restore` to restore the project dependencies
+  - Run the command `$ dotnet build` to build and compile the project
+  - Run the command `$ dotnet run` to build and compile the project
 
 ## Known Bugs
 
