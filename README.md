@@ -78,7 +78,7 @@ Copyright 2021 Kate Kiatsiri
 
 ## Contact Information
 
-<h3> Kate Kiatsiri </h3>
+<h3> Kate Kiatsiri [Email me](mailto:keidsiri@gmail.com)</h3>
 
 [![GitHub Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/keidsiri)
-[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/keidsiri)
+[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kiatsiri)

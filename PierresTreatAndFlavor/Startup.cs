@@ -29,7 +29,6 @@ namespace PierresTreatAndFlavor
         .AddDbContext<PierresTreatAndFlavorContext>(options => options
         .UseMySql(Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(Configuration["ConnectionStrings:DefaultConnection"])));
 
-      //new code
       services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<PierresTreatAndFlavorContext>()
                 .AddDefaultTokenProviders();
@@ -48,12 +47,10 @@ namespace PierresTreatAndFlavor
     {
       app.UseDeveloperExceptionPage();
 
-      //new code
       app.UseAuthentication(); 
 
       app.UseRouting();
 
-      //new code
       app.UseAuthorization();
 
       app.UseEndpoints(routes =>
